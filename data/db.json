@@ -1,0 +1,456 @@
+{
+  "destinations": [
+    {
+      "id": "1",
+      "name": "Ooty",
+      "country": "Tamil Nadu, India",
+      "price": 5000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=900",
+      "description": "A hill station in the Nilgiri Hills known for tea gardens, cool weather and scenic lakes.",
+      "attractions": [
+        "Ooty Lake",
+        "Government Botanical Gardens",
+        "Doddabetta Peak"
+      ],
+      "bestTime": "October to June"
+    },
+    {
+      "id": "2",
+      "name": "Goa",
+      "country": "Goa, India",
+      "price": 7000,
+      "days": 4,
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+      "description": "India's beach state, famous for golden shores, old Portuguese churches and lively nightlife.",
+      "attractions": [
+        "Baga Beach",
+        "Basilica of Bom Jesus",
+        "Fort Aguada"
+      ],
+      "bestTime": "November to February"
+    },
+    {
+      "id": "3",
+      "name": "Manali",
+      "country": "Himachal Pradesh, India",
+      "price": 9000,
+      "days": 5,
+      "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=900",
+      "description": "A Himalayan valley town popular for snow, adventure sports and mountain views.",
+      "attractions": [
+        "Solang Valley",
+        "Rohtang Pass",
+        "Hadimba Temple"
+      ],
+      "bestTime": "March to June"
+    },
+    {
+      "id": "4",
+      "name": "Munnar",
+      "country": "Kerala, India",
+      "price": 6000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900",
+      "description": "Rolling tea plantations and misty hills in the Western Ghats of Kerala.",
+      "attractions": [
+        "Eravikulam National Park",
+        "Mattupetty Dam",
+        "Tea Museum"
+      ],
+      "bestTime": "September to May"
+    },
+    {
+      "id": "5",
+      "name": "Jaipur",
+      "country": "Rajasthan, India",
+      "price": 8000,
+      "days": 4,
+      "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=900",
+      "description": "The Pink City, full of royal forts, palaces and colourful bazaars.",
+      "attractions": [
+        "Amber Fort",
+        "Hawa Mahal",
+        "City Palace"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "6",
+      "name": "Kodaikanal",
+      "country": "Tamil Nadu, India",
+      "price": 4500,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=900",
+      "description": "A peaceful hill station with a star-shaped lake, pine forests and misty viewpoints.",
+      "attractions": [
+        "Kodaikanal Lake",
+        "Coaker's Walk",
+        "Pillar Rocks"
+      ],
+      "bestTime": "September to May"
+    },
+    {
+      "id": "7",
+      "name": "Kashmir",
+      "country": "Jammu & Kashmir, India",
+      "price": 12000,
+      "days": 6,
+      "image": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=900",
+      "description": "A Himalayan valley known for houseboats, gardens, lakes and snow-capped peaks.",
+      "attractions": [
+        "Dal Lake",
+        "Gulmarg",
+        "Pahalgam"
+      ],
+      "bestTime": "April to October"
+    },
+    {
+      "id": "8",
+      "name": "Mysore",
+      "country": "Karnataka, India",
+      "price": 4000,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1600112356915-089abb8fc71a?w=900",
+      "description": "A heritage city famous for its grand palace, silk and royal history.",
+      "attractions": [
+        "Mysore Palace",
+        "Chamundi Hills",
+        "Brindavan Gardens"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "9",
+      "name": "Ladakh",
+      "country": "Ladakh, India",
+      "price": 15000,
+      "days": 7,
+      "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=900",
+      "description": "A high-altitude desert with ancient monasteries, blue lakes and dramatic mountain roads.",
+      "attractions": [
+        "Pangong Lake",
+        "Nubra Valley",
+        "Leh Palace"
+      ],
+      "bestTime": "May to September"
+    },
+    {
+      "id": "10",
+      "name": "Darjeeling",
+      "country": "West Bengal, India",
+      "price": 7500,
+      "days": 4,
+      "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=900",
+      "description": "A tea-growing hill town with views of Kanchenjunga and a famous toy train.",
+      "attractions": [
+        "Tiger Hill",
+        "Batasia Loop",
+        "Darjeeling Himalayan Railway"
+      ],
+      "bestTime": "March to May"
+    },
+    {
+      "id": "11",
+      "name": "Agra",
+      "country": "Uttar Pradesh, India",
+      "price": 5500,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=900",
+      "description": "Home of the Taj Mahal and a showcase of Mughal architecture.",
+      "attractions": [
+        "Taj Mahal",
+        "Agra Fort",
+        "Mehtab Bagh"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "12",
+      "name": "Alleppey",
+      "country": "Kerala, India",
+      "price": 6500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900",
+      "description": "Known as the Venice of the East, with calm backwaters and houseboat stays.",
+      "attractions": [
+        "Backwater houseboat cruise",
+        "Alappuzha Beach",
+        "Marari Beach"
+      ],
+      "bestTime": "November to February"
+    },
+    {
+      "id": "13",
+      "name": "Rishikesh",
+      "country": "Uttarakhand, India",
+      "price": 6000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=900",
+      "description": "The yoga capital on the Ganges, also loved for river rafting and spiritual retreats.",
+      "attractions": [
+        "Laxman Jhula",
+        "Triveni Ghat",
+        "Ganga river rafting"
+      ],
+      "bestTime": "September to May"
+    },
+    {
+      "id": "14",
+      "name": "Udaipur",
+      "country": "Rajasthan, India",
+      "price": 8500,
+      "days": 4,
+      "image": "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=900",
+      "description": "The City of Lakes, with romantic palaces and old-world charm.",
+      "attractions": [
+        "City Palace",
+        "Lake Pichola",
+        "Saheliyon Ki Bari"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "15",
+      "name": "Coorg",
+      "country": "Karnataka, India",
+      "price": 5500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?w=900",
+      "description": "Coffee plantations, waterfalls and green hills in the Western Ghats.",
+      "attractions": [
+        "Abbey Falls",
+        "Raja's Seat",
+        "Dubare Elephant Camp"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "16",
+      "name": "Shimla",
+      "country": "Himachal Pradesh, India",
+      "price": 8500,
+      "days": 4,
+      "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=900",
+      "description": "A colonial-era hill station with pleasant weather and mountain views.",
+      "attractions": [
+        "The Ridge",
+        "Mall Road",
+        "Jakhoo Temple"
+      ],
+      "bestTime": "March to June"
+    },
+    {
+      "id": "17",
+      "name": "Mumbai",
+      "country": "Maharashtra, India",
+      "price": 7500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900",
+      "description": "India's coastal financial capital, mixing colonial landmarks, street food and sea views.",
+      "attractions": [
+        "Gateway of India",
+        "Marine Drive",
+        "Elephanta Caves"
+      ],
+      "bestTime": "November to February"
+    },
+    {
+      "id": "18",
+      "name": "Delhi",
+      "country": "Delhi, India",
+      "price": 6000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=900",
+      "description": "The capital city, rich in Mughal monuments, museums and food.",
+      "attractions": [
+        "Red Fort",
+        "India Gate",
+        "Qutub Minar"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "19",
+      "name": "Bengaluru",
+      "country": "Karnataka, India",
+      "price": 5000,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=900",
+      "description": "The Garden City, known for parks, cafes and a pleasant climate.",
+      "attractions": [
+        "Lalbagh Botanical Garden",
+        "Cubbon Park",
+        "Bangalore Palace"
+      ],
+      "bestTime": "October to February"
+    },
+    {
+      "id": "20",
+      "name": "Chennai",
+      "country": "Tamil Nadu, India",
+      "price": 4500,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=900",
+      "description": "A coastal city rich in temples, culture and South Indian food.",
+      "attractions": [
+        "Marina Beach",
+        "Kapaleeshwarar Temple",
+        "Fort St. George"
+      ],
+      "bestTime": "November to February"
+    },
+    {
+      "id": "21",
+      "name": "Hyderabad",
+      "country": "Telangana, India",
+      "price": 5500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1572445271230-a78b5944a659?w=900",
+      "description": "The City of Pearls, famous for its history, forts and biryani.",
+      "attractions": [
+        "Charminar",
+        "Golconda Fort",
+        "Hussain Sagar Lake"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "22",
+      "name": "Kolkata",
+      "country": "West Bengal, India",
+      "price": 6500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1558431382-27e303142255?w=900",
+      "description": "The cultural capital of India, with colonial buildings, art and sweets.",
+      "attractions": [
+        "Victoria Memorial",
+        "Howrah Bridge",
+        "Dakshineswar Kali Temple"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "23",
+      "name": "Pondicherry",
+      "country": "Puducherry, India",
+      "price": 6000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=900",
+      "description": "A former French colony with colourful streets, quiet beaches and cafes.",
+      "attractions": [
+        "Promenade Beach",
+        "Auroville",
+        "French Quarter"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "24",
+      "name": "Hampi",
+      "country": "Karnataka, India",
+      "price": 5500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1600100397608-f0109f3c1a8b?w=900",
+      "description": "The ruins of the Vijayanagara Empire, set among boulders and the Tungabhadra river.",
+      "attractions": [
+        "Virupaksha Temple",
+        "Vittala Temple",
+        "Elephant Stables"
+      ],
+      "bestTime": "October to February"
+    },
+    {
+      "id": "25",
+      "name": "Wayanad",
+      "country": "Kerala, India",
+      "price": 6500,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?w=900",
+      "description": "Forests, waterfalls and spice plantations in the hills of northern Kerala.",
+      "attractions": [
+        "Edakkal Caves",
+        "Soochipara Falls",
+        "Banasura Sagar Dam"
+      ],
+      "bestTime": "October to May"
+    },
+    {
+      "id": "26",
+      "name": "Varkala",
+      "country": "Kerala, India",
+      "price": 6000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+      "description": "A relaxed beach town with red cliffs overlooking the Arabian Sea.",
+      "attractions": [
+        "Papanasam Beach",
+        "Varkala Cliff",
+        "Janardhana Swamy Temple"
+      ],
+      "bestTime": "November to March"
+    },
+    {
+      "id": "27",
+      "name": "Mahabalipuram",
+      "country": "Tamil Nadu, India",
+      "price": 4500,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=900",
+      "description": "A seaside town of ancient rock-cut temples and stone carvings.",
+      "attractions": [
+        "Shore Temple",
+        "Pancha Rathas",
+        "Arjuna's Penance"
+      ],
+      "bestTime": "November to February"
+    },
+    {
+      "id": "28",
+      "name": "Rameswaram",
+      "country": "Tamil Nadu, India",
+      "price": 5000,
+      "days": 3,
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900",
+      "description": "A sacred island town with a famous temple and a historic sea bridge.",
+      "attractions": [
+        "Ramanathaswamy Temple",
+        "Pamban Bridge",
+        "Dhanushkodi"
+      ],
+      "bestTime": "October to April"
+    },
+    {
+      "id": "29",
+      "name": "Kanyakumari",
+      "country": "Tamil Nadu, India",
+      "price": 4000,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900",
+      "description": "India's southern tip, where three seas meet and the sunrise is a highlight.",
+      "attractions": [
+        "Vivekananda Rock Memorial",
+        "Thiruvalluvar Statue",
+        "Kanyakumari Beach"
+      ],
+      "bestTime": "October to March"
+    },
+    {
+      "id": "30",
+      "name": "Yercaud",
+      "country": "Tamil Nadu, India",
+      "price": 3500,
+      "days": 2,
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900",
+      "description": "A quiet hill station in the Shevaroy Hills with coffee estates and lake views.",
+      "attractions": [
+        "Yercaud Lake",
+        "Lady's Seat",
+        "Kiliyur Falls"
+      ],
+      "bestTime": "September to May"
+    }
+  ],
+  "bookings": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
