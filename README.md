@@ -1,16 +1,31 @@
-# React + Vite
+# TravelGo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+TravelGo is a React and Vite travel-planning demo with destination search, favourites, trips, and bookings.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Install dependencies:
 
-## React Compiler
+```sh
+npm ci
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+In one terminal, start the JSON Server API:
 
-## Expanding the Oxlint configuration
+```sh
+npx json-server --watch data/db.json --port 3500
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+In another terminal, start the Vite app:
+
+```sh
+npm run dev
+```
+
+Local development uses the JSON Server API. GitHub Pages uses the bundled destination data and stores demo bookings in the browser's local storage.
+
+Email confirmations require the optional EmailJS values in a local `.env` file. Do not commit that file.
+
+## Deployment
+
+Pushing to `main` builds and deploys the app to [GitHub Pages](https://9514272785.github.io/TravelGo/).

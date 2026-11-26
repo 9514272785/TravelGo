@@ -17,8 +17,11 @@ import About from "./component/About";
 import Footer from "./component/Footer";
 import Toast from "./component/Toast";
 import useLocalStorage from "./hooks/useLocalStorage";
+import seedData from "../data/db.json";
 
-const API = "http://localhost:3500";
+const API =
+    import.meta.env.VITE_API_URL ||
+    (import.meta.env.DEV ? "http://localhost:3500" : "");
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -31,14 +34,16 @@ function ScrollToTop() {
 }
 
 function App() {
-    const [destinations, setDestinations] = useState([]);
-    const [bookings, setBookings] = useState([]);
+    const [destinations, setDestinations] = useState(() =>
+        API ? [] : seedData.destinations
+    );
+    const [bookings, setBookings] = useLocalStorage("bookings", []);
 
     const [trips, setTrips] = useLocalStorage("trips", []);
     const [favorites, setFavorites] = useLocalStorage("favorites", []);
     const [theme, setTheme] = useLocalStorage("theme", "light");
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(Boolean(API));
     const [error, setError] = useState("");
     const [toast, setToast] = useState("");
 
@@ -47,6 +52,10 @@ function App() {
     }, [theme]);
 
     useEffect(() => {
+        if (!API) {
+            return;
+        }
+
         const controller = new AbortController();
 
         async function fetchData() {
@@ -85,7 +94,7 @@ function App() {
         fetchData();
 
         return () => controller.abort();
-    }, []);
+    }, [setBookings]);
 
     function showToast(message) {
         setToast(message);
@@ -124,19 +133,28 @@ function App() {
 
     async function addBooking(booking) {
         try {
-            const response = await fetch(`${API}/bookings`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(booking)
-            });
+            let savedBooking;
 
-            if (!response.ok) {
-                throw new Error("Booking could not be saved");
+            if (API) {
+                const response = await fetch(`${API}/bookings`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(booking)
+                });
+
+                if (!response.ok) {
+                    throw new Error("Booking could not be saved");
+                }
+
+                savedBooking = await response.json();
+            } else {
+                savedBooking = {
+                    ...booking,
+                    id: crypto.randomUUID()
+                };
             }
-
-            const savedBooking = await response.json();
 
             setBookings((previous) => [...previous, savedBooking]);
 
@@ -184,6 +202,14 @@ function App() {
     }
 
     async function cancelBooking(id) {
+        if (!API) {
+            setBookings((previous) =>
+                previous.filter((booking) => booking.id !== id)
+            );
+            showToast("Booking cancelled!");
+            return;
+        }
+
         try {
             const response = await fetch(`${API}/bookings/${id}`, {
                 method: "DELETE"
